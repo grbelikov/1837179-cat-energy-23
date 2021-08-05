@@ -1,12 +1,203 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>HTML Academy: Кэт энерджи. Мобильная версия</title>
   </head>
-  <body>
+  <body class="page__body">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logo-mobile.svg" width="33" height="37" alt="cat energy logo">
+      </a>
+      <a class="page-header__title-logo">
+        <img src="img/logo-mobile-title.svg" width="101" height="18" alt="cat energy title logo">
+      </a>
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="katalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="programs.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Функциональное питание для котов</h1>
+      <section class="slogan">
+        <div class="slogan__wrapper">
+          <header class="slogan__header">
+            <p class="slogan__title">
+              Функциональное<br>
+              питание для котов
+            </p>
+            <p class="slogan__intro">
+              Занялся собой? Займись котом!
+            </p>
+          </header>
+          <div class="page-main__choose_programs">
+            <a class="choose_program" href="#">Подобрать программу</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="content__slimming"></div>
+        <div class="content__slimming-wrapper">
+
+          <div class="content_slimming__title">
+            <h3 class="content_slimming__text">Похудение:</h3>
+
+            <p>Ваш кот весит больше собаки и<br>почти утратил способность лазить<br>
+              по деревьям? Пора на диету! Cat<br>Energy Slim поможет вашему<br>
+              питомцу сбросить лишний вес.
+            </p>
+          </div>
+        </div>
+        <div class="content__katalog slim">
+          <a class="content__katalog slim-link" href="#">Каталог slim</a>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="content__slimming"></div>
+        <div class="content__slimming-wrapper">
+          <div class="content_slimming__title">
+            <h3 class="content_slimming__text">Набор массы:</h3>
+            <p>Заработать авторитет среди<br>дворовых котов и даже собак?<br>
+              Серия Cat Energy Pro поможет<br>вашему коту нарастить<br>необходимые мышцы!
+            </p>
+          </div>
+        </div>
+        <div class="content__katalog slim">
+          <a class="content__katalog slim-link" href="#">Каталог PRO</a>
+        </div>
+      </section>
+
+      <section>
+        <div class="advantages">
+            <h2 class="advantages__title">Как это работает</h2>
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--fast">
+                <p class="advantages__description">Функциональное питание<br>содержит
+                  только полезные<br>питательные вещества.
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--fast">
+                <p class="advantages__description">Выпускается в виде порошка,<br>который
+                  нужно лишь залить<br>кипятком и готово.
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--fast">
+                <p class="advantages__description">Замените один-два приема<br>обычной
+                  еды на наше<br>функциональное питание.
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--fast">
+                <p class="advantages__description">Уже через месяц<br>наслаждайтесь
+                  изменениями<br>к лучшему вашего питомца!
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="example">
+        <div class="example__wrapper">
+          <h2 class="exapmle__title">Живой пример</h2>
+          <blockquote class="example__item">
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+              Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих
+              привычек и по-прежнему спит по 16 часов в день.</p>
+          </blockquote>
+          <ul class="example__list-data">
+            <li>5 кг</li>
+            <li>60 дней</li>
+            <li>затраты на питание: 15 000 руб.</li>
+          </ul>
+
+          <div class="example__picture">
+            <a class="example__picture-img before">
+              <img src="img/cat_before.png" width="311" height="232" alt="cat before">
+            </a>
+            <!-- <a class="example__picture-img after">
+              <img src="img/cat_after.png" width="251" height="240" alt="cat after">
+            </a> -->
+            <p class="example__picture__toggles slider__toggles">
+              <button class="slider__toggle slider__toggle--current" type="button">1</button>
+              <button class="slider__toggle" type="button">2</button>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="location">
+        <div class="location__wrapper">
+          <div class="location__cooperation contacts">
+            <p class="contacts__title">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
+            <p class="contacts__text">
+              ул. Большая<br>Конюшенная, д. 19/8<br>
+              Санкт-Петербург
+            </p>
+            <div class="location-map">
+              <a class="location-map__picture-rectangle">
+                <img src="img/map.png" width="320" height="362" alt="picture with location">
+              </a>
+              <a class="location-map__picture-pin">
+                <img src="img/map-pin.png" width="57" height="53" alt="cat energy logo">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-header__title-logo">
+          <img src="img/logo-mobile-title.svg" width="128" height="24" alt="cat energy title logo">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__logo-name">
+            <img src="img/logo_footer_HTML Academy.svg" width="114" height="18" alt="cat energy title logo">
+          </a>
+          <a class="copyright__logo_cap">
+            <img src="img/oxford_cap_academic_cap.svg" width="27" height="34" alt="cat energy title logo">
+          </a>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
