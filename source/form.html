@@ -40,7 +40,6 @@
 
     <main>
       <h1 class="title">Подбор программы</h1>
-
       <section class="questionnaire">
         <div class="questionnaire__name-form">
           <p class="questionnaire__title">
@@ -50,70 +49,75 @@
           <form action="https://echo.htmlacademy.ru" method="POST">
 
             <fieldset class="">
-              <label for="name_field">ИМЯ:*</label>
+              <legend>main_data</legend>
+              <label for="name_field">Имя:*</label>
                 <input type="text" name="name" id="name_field" required placeholder="Барсик">
               <br>
-              <label for="weight_field">ВЕС (КГ):*</label>
+              <label for="weight_field">Вес (кг):*</label>
                 <input type="number" name="weight" id="weight_field" required placeholder="7">
               <br>
-              <label for="age_field">ВОЗРАСТ (ЛЕТ):</label>
+              <label for="age_field">Возраст (лет):</label>
                 <input type="number" name="age" id="age_field" placeholder="7">
             </fieldset>
 
             <fieldset class="">
+              <legend>selecet_the_program</legend>
               <input type="radio" name="programs" value="value_1" id="program_1" checked>
-              <label for="program_1">ПОХУДЕНИЕ</label>
+              <label for="program_1">Похудение</label>
               <br>
 
               <input type="radio" name="programs" value="value_2" id="program_2">
-              <label for="program_2">НАБОР МАССЫ</label>
+              <label for="program_2">Набор массы</label>
               <br>
 
               <input type="radio" name="programs" value="value_3" id="program_3">
-              <label for="program_3">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</label>
+              <label for="program_3">Не знаю (нужен ваш совет)</label>
             </fieldset>
 
             <fieldset class="">
+              <legend>find_the_hotel</legend>
               <h2>Контактные данные (владельца кота)</h2>
 
-              <label for="email">E-MAIL:*</label>
+              <label for="email">e-mail:*</label>
               <input type="email" name="email" id="email"
                 placeholder="kuklachev@gmail.com" required>
               <br>
 
-              <label for="tel">ТЕЛЕФОН:*</label>
+              <label for="tel">Телефон:*</label>
               <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90"
               pattern="[0-9]{11}" required>
             </fieldset>
 
             <fieldset class="">
+              <legend>comments</legend>
               <h2>Комментарий</h2>
-              <textarea placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"
+              <textarea placeholder="Расскажите обо всех повадках кота"
                 name="comment" cols="40" rows="8" id="comment"></textarea>
               <label for="comment"></label>
             </fieldset>
 
             <fieldset class="">
+              <legend>additional</legend>
               <h2>Дополнительно</h2>
               <input type="checkbox" name="sugar" id="sugar" checked>
-              <label for="sugar">САХАРОЗАМЕНИТЕЛЬ</label>
+              <label for="sugar">Сахарозаменитель</label>
 
               <input type="checkbox" name="water" id="water">
-              <label for="water">ПИТЬЕВАЯ ВОДА</label>
+              <label for="water">Питьевая вода</label>
 
               <input type="checkbox" name="milk" id="milk">
-              <label for="milk">МОЛОКО</label>
+              <label for="milk">Молоко</label>
 
               <input type="checkbox" name="vitamins" id="vitamins">
-              <label for="vitamins">ВИТАМИНЫ</label>
+              <label for="vitamins">Витамины</label>
             </fieldset>
 
             <fieldset class="">
-              <div class="submit__wrapper">
-                <input type="submit" value="Отправить заявку">
+              <legend>submit</legend>
+              <div class="button__wrapper">
+                <button type="submit">Отправить заявку</button>
               </div>
             </fieldset>
-
           </form>
 
           <p>
