@@ -2,7 +2,8 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи. Мобильная версия</title>
+    <title>МОЙ ПРОЕКТ HTML Academy: Кэт энерджи. Мобильная версия</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
@@ -39,10 +40,9 @@
     </header>
 
     <main class="main-page">
-      <h1 class="catalog">Каталог продукции</h1>
-
-      <section class="catalog__products">
-        <div class="catalog__product-chick-500">
+      <section class="catalog">
+        <h1 class="catalog headline">Каталог продукции</h1>
+        <div class="catalog__item small chick-500">
           <a name="energy_pro" href="product_description.html">
             <p>Cat Energy PRO 500 г</p>
             <img src="img/product_chick_500.png" width="68" height="86"
@@ -62,7 +62,7 @@
             </a>
         </div>
 
-        <div class="catalog__product-chick-1000">
+        <div class="catalog__item big chick-1000">
           <a href="product_description.html">
           <p>Cat Energy PRO 1000 г</p>
             <img src="img/product_chick_1000.png" width="84" height="100.8"
@@ -82,7 +82,7 @@
           </a>
         </div>
 
-        <div class="catalog__product-fish-500">
+        <div class="catalog__item small fish-500">
           <a href="product_description.html">
             <p>Cat Energy PRO 500 г/p</p>
             <img src="img/product_fish_500.png" width="68" height="78"
@@ -102,7 +102,7 @@
           </a>
         </div>
 
-        <div class="catalog__product-fish-1000">
+        <div class="catalog__item big fish-1000">
           <a href="product_description.html">
             <p>Cat Energy PRO 1000 г/p</p>
             <img src="img/product_fish_1000.png" width="84" height="100.8"
@@ -121,7 +121,7 @@
             <button type="button">Заказать</button>
           </a>
 
-        <div class="catalog__product-buckwheat-500">
+        <div class="catalog__item small buckwheat-500">
           <a name="energy_slim" href="product_description.html">
             <p>Cat Energy SLIM 500 г/p</p>
             <img src="img/product_buckwheat_500.png" width="68" height="78"
@@ -141,7 +141,7 @@
           </a>
         </div>
 
-        <div class="catalog__product-buckwheat-1000">
+        <div class="catalog__item big buckwheat-1000">
           <a href="product_description.html">
             <p>Cat Energy SLIM 1000 г/p</p>
             <img src="img/product_buckwheat_1000.png" width="84" height="100"
@@ -161,7 +161,7 @@
           </a>
         </div>
 
-        <div class="catalog__product-rice-500">
+        <div class="catalog__item small rice-500">
           <a href="product_description.html">
             <p>Cat Energy SLIM 500 г/p</p>
             <img src="img/product_rice_500.png" width="72" height="84"
@@ -182,25 +182,23 @@
         </div>
       </section>
 
-      <section class="catalog__show-all">
-        <div class="show-all__wrapper">
+      <section class="catalog-show">
+        <div class="catalog-show__wrapper">
 
-          <p class="catalog__show-all title">
+          <p class="catalog-show title">
             Показать еще<br>100500 товаров
           </p>
-          <p class="catalog__show-all text">
+          <p class="ccatalog-show text">
             На самом деле вкусов<br>гораздо больше!
           </p>
-          <a class="button catalog__show-all" href="products_all.html">
-            <button type="button">Показать все</button>
-          </a>
+          <button type="button">Показать все</button>
         </div>
       </section>
 
-      <section class="catalog__additional-products">
+      <section class="additional-products">
         <h2>Дополнительные товары</h2>
 
-        <div class="catalog__additional-products sweetener">
+        <div class="additional-products sweetener">
           <a href="product_description.html">
             <p>Сахарозаменитель</p>
           </a>
@@ -213,7 +211,7 @@
           </a>
         </div>
 
-        <div class="catalog__additional-products water">
+        <div class="additional-products water">
           <a href="product_description.html">
             <p>Питьевая вода</p>
           </a>
@@ -226,7 +224,7 @@
           </a>
         </div>
 
-        <div class="catalog__additional-products milk">
+        <div class="additional-products milk">
           <a href="product_description.html">
             <p>Молоко</p>
           </a>
@@ -239,7 +237,7 @@
           </a>
         </div>
 
-        <div class="catalog__additional-products vitamins">
+        <div class="additional-products vitamins">
           <a href="product_description.html">
             <p>Витамины</p>
           </a>
@@ -253,8 +251,8 @@
         </div>
       </section>
 
-      <section class="present__block">
-        <div class="present__block-wrapper">
+      <section class="present-block">
+        <div class="present-block wrapper">
           <p>
             Закажите все<br>и получите чехол для<br>кота в подарок!
           </p>
@@ -281,7 +279,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-header__title-logo">
+        <a class="page-footer__title-logo">
           <img src="img/logo-mobile-title.svg" width="128" height="24" alt="cat energy title logo">
         </a>
         <div class="page-footer__social social">
@@ -305,10 +303,10 @@
         </div>
 
         <div class="copyright">
-          <a class="copyright__logo_name" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__logo-name" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
           </a>
-          <a class="copyright__logo_icon" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__logo-icon" href="https://htmlacademy.ru/intensive/adaptive">
             <svg
               width="27"
               height="34"
