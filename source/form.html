@@ -40,63 +40,60 @@
     </header>
 
     <main>
-      <h1 class="title">Подбор программы</h1>
+      <h1 class="main-title">Подбор программы</h1>
       <section class="questionnaire">
         <div class="questionnaire__name-form">
-          <p class="questionnaire__title">
+          <p class="fields questionnaire__title">
             Заполните анкету, и мы подберем программу питания для
             вашего кота
           </p>
           <form action="https://echo.htmlacademy.ru" method="POST">
 
-            <fieldset class="">
-              <legend>main_data</legend>
+            <fieldset class="fields customer_info">
+              <legend class="visually-hidden">main_data</legend>
               <label for="name_field">Имя:*</label>
                 <input type="text" name="name" id="name_field" required placeholder="Барсик">
-              <br>
+
               <label for="weight_field">Вес (кг):*</label>
                 <input type="number" name="weight" id="weight_field" required placeholder="7">
-              <br>
+
               <label for="age_field">Возраст (лет):</label>
                 <input type="number" name="age" id="age_field" placeholder="7">
             </fieldset>
 
-            <fieldset class="">
-              <legend>selecet_the_program</legend>
+            <fieldset class="fields vars">
+              <legend class="visually-hidden">selecet_the_program</legend>
               <input type="radio" name="programs" value="value_1" id="program_1" checked>
               <label for="program_1">Похудение</label>
-              <br>
 
               <input type="radio" name="programs" value="value_2" id="program_2">
               <label for="program_2">Набор массы</label>
-              <br>
 
               <input type="radio" name="programs" value="value_3" id="program_3">
               <label for="program_3">Не знаю (нужен ваш совет)</label>
             </fieldset>
 
-            <fieldset class="">
-              <legend>Контактные данные (владельца кота)</legend>
+            <fieldset class="fields contacts">
+              <legend class="fields-title">Контактные данные (владельца кота)</legend>
 
               <label for="email">e-mail:*</label>
               <input type="email" name="email" id="email"
                 placeholder="kuklachev@gmail.com" required>
-              <br>
 
               <label for="tel">Телефон:*</label>
               <input type="tel" name="tel" id="tel" placeholder="89609006090"
               pattern="[0-9]{11}" required>
             </fieldset>
 
-            <fieldset class="">
-              <legend>Комментарий</legend>
+            <fieldset class="fields comments">
+              <legend class="fields-title" >Комментарий</legend>
               <textarea placeholder="Расскажите обо всех повадках кота"
                 name="comment" cols="40" rows="8" id="comment"></textarea>
               <label for="comment"></label>
             </fieldset>
 
-            <fieldset class="">
-              <legend>Дополнительно</legend>
+            <fieldset class="fields additional-products">
+              <legend class="fields-title">Дополнительно</legend>
               <input type="checkbox" name="sugar" id="sugar" checked>
               <label for="sugar">Сахарозаменитель</label>
 
@@ -110,31 +107,30 @@
               <label for="vitamins">Витамины</label>
             </fieldset>
 
-            <fieldset class="">
-              <legend>submit</legend>
-              <button type="submit">Отправить заявку</button>
+            <fieldset class="fields field-submit">
+              <legend class="visually-hidden">submit</legend>
+              <button class="button button--sent-result" type="submit">Отправить заявку</button>
             </fieldset>
           </form>
 
-          <p>
-            *- Обязательные поля
+          <!-- &#8211; this is code of dash -->
+          <p class="fields text">
+            *&#8211; Обязательные поля
           </p>
         </div>
       </section>
 
       <section class="location">
-        <div class="location__wrapper">
-          <div class="location__cooperation contacts">
-            <p class="contacts__title">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
-            <p class="contacts__text">
-              ул. Большая<br>Конюшенная, д. 19/8<br>
-              Санкт-Петербург
-            </p>
-            <div class="location-map">
-              <a class="location-map__picture-rectangle">
-                <img src="img/location.png" width="320" height="362" alt="местоположение на карте">
-              </a>
-            </div>
+        <div class="location__wrapper location-form">
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__text">
+            ул. Большая Конюшенная, д. 19/8
+            Санкт-Петербург
+          </p>
+          <div class="location-map">
+            <a class="location-map__picture-rectangle">
+              <img src="img/location.png" width="320" height="362" alt="местоположение на карте">
+            </a>
           </div>
         </div>
       </section>
@@ -149,7 +145,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <img src="img/vk.svg" width="23" height="16" alt="cat energy title logo">
+                <img src="img/vk.svg" width="22" height="12" alt="cat energy title logo">
               </a>
             </li>
             <li class="social__item">
@@ -159,7 +155,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                <img src="img/facebook.svg" width="22" height="22" alt="cat energy title logo">
+                <img src="img/facebook.svg" width="10" height="18" alt="cat energy title logo">
               </a>
             </li>
           </ul>
@@ -175,7 +171,7 @@
               height="34"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 60 60">
-              <path fill="#2E368F"
+              <path fill="#666666"
               d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17
               36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8
               7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7
