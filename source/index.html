@@ -204,8 +204,17 @@
               <img src="img/cat_after.png" width="251" height="240" alt="cat after">
             </a>
             <p class="example__picture__toggles">
+
+              <label class="visually-hidden" for="cat_progress">переключатель кота</label>
+              <span class="example__picture__toggles before">было</span>
+              <input type="range" id="cat_progress" name="cat_progress" min="1" max="2" step="1">
+              <span class="example__picture__toggles after">стало</span>
+
+                <!--
               <button class="example__picture__toggles before" type="button">было</button>
-              <button class="example__picture__toggles after" type="button">стало</button>
+              <input type="range" min="1" max="2">
+              <button class="example__picture__toggles after" type="button">стало</button> -->
+
             </p>
           </div>
         </div>
