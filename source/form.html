@@ -51,38 +51,54 @@
 
             <fieldset class="fields customer_info">
               <legend class="visually-hidden">main_data</legend>
-              <label for="name_field">Имя:*</label>
+              <p>
+                <label for="name_field">Имя:*</label>
                 <input type="text" name="name" id="name_field" required placeholder="Барсик">
+              </p>
 
-              <label for="weight_field">Вес (кг):*</label>
+              <p>
+                <label for="weight_field">Вес (кг):*</label>
                 <input type="number" name="weight" id="weight_field" required placeholder="7">
+              </p>
 
-              <label for="age_field">Возраст (лет):</label>
+              <p>
+                <label for="age_field">Возраст (лет):</label>
                 <input type="number" name="age" id="age_field" placeholder="7">
+              </p>
             </fieldset>
 
             <fieldset class="fields vars">
               <legend class="visually-hidden">selecet_the_program</legend>
-              <input type="radio" name="programs" value="value_1" id="program_1" checked>
-              <label for="program_1">Похудение</label>
+              <p>
+                <input type="radio" name="programs" value="value_1" id="program_1" checked>
+                <label for="program_1">Похудение</label>
+              </p>
 
-              <input type="radio" name="programs" value="value_2" id="program_2">
-              <label for="program_2">Набор массы</label>
+              <p>
+                <input type="radio" name="programs" value="value_2" id="program_2">
+                <label for="program_2">Набор массы</label>
+              </p>
 
-              <input type="radio" name="programs" value="value_3" id="program_3">
-              <label for="program_3">Не знаю (нужен ваш совет)</label>
+              <p>
+                <input type="radio" name="programs" value="value_3" id="program_3">
+                <label for="program_3">Не знаю (нужен ваш совет)</label>
+              </p>
             </fieldset>
 
             <fieldset class="fields contacts">
               <legend class="fields-title">Контактные данные (владельца кота)</legend>
 
-              <label for="email">e-mail:*</label>
-              <input type="email" name="email" id="email"
+              <p>
+                <label for="email">e-mail:*</label>
+                <input class="fields email" type="email" name="email" id="email"
                 placeholder="kuklachev@gmail.com" required>
+              </p>
 
-              <label for="tel">Телефон:*</label>
-              <input type="tel" name="tel" id="tel" placeholder="89609006090"
-              pattern="[0-9]{11}" required>
+              <p>
+                <label for="tel">Телефон:*</label>
+                <input type="tel" name="tel" id="tel" placeholder="89609006090"
+                pattern="[0-9]{11}" required>
+              </p>
             </fieldset>
 
             <fieldset class="fields comments">
@@ -94,20 +110,28 @@
 
             <fieldset class="fields additional-products">
               <legend class="fields-title">Дополнительно</legend>
-              <input type="checkbox" name="sugar" id="sugar" checked>
-              <label for="sugar">Сахарозаменитель</label>
+              <p>
+                <input type="checkbox" name="sugar" id="sugar" checked>
+                <label for="sugar">Сахарозаменитель</label>
+              </p>
 
-              <input type="checkbox" name="water" id="water">
-              <label for="water">Питьевая вода</label>
+              <p>
+                <input type="checkbox" name="water" id="water">
+                <label for="water">Питьевая вода</label>
+              </p>
 
-              <input type="checkbox" name="milk" id="milk">
-              <label for="milk">Молоко</label>
+              <p>
+                <input type="checkbox" name="milk" id="milk">
+                <label for="milk">Молоко</label>
+              </p>
 
-              <input type="checkbox" name="vitamins" id="vitamins">
-              <label for="vitamins">Витамины</label>
+              <p>
+                <input type="checkbox" name="vitamins" id="vitamins">
+                <label for="vitamins">Витамины</label>
+              </p>
             </fieldset>
 
-            <fieldset class="fields field-submit">
+              <fieldset class="fields field-submit">
               <legend class="visually-hidden">submit</legend>
               <button class="button button--sent-result" type="submit">Отправить заявку</button>
             </fieldset>
@@ -121,16 +145,15 @@
       </section>
 
       <section class="location">
-        <div class="location__wrapper location-form">
-          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__text">
-            ул. Большая Конюшенная, д. 19/8
-            Санкт-Петербург
-          </p>
-          <div class="location-map">
-            <a class="location-map__picture-rectangle">
-              <img src="img/location.png" width="320" height="362" alt="местоположение на карте">
-            </a>
+        <div class="location wrapper location-index">
+          <div class="location cooperation contacts">
+            <p class="location contacts title">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="location contacts__text">
+              ул. Большая Конюшенная, д. 19/8
+              Санкт-Петербург
+            </address>
+            <div class="location map">
+            </div>
           </div>
         </div>
       </section>

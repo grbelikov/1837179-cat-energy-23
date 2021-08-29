@@ -1,63 +1,72 @@
-.catalog .headline {
+.catalog {
   font-family: "Oswald", "Arial", sans-serif;
+}
+
+.catalog.headline {
   font-size: 36px;
   color: @text-color-black;
   width: 280px;
   font-weight: none;
 }
 
-.catalog__item p {
-  font-family: "Oswald", "Arial", sans-serif;
+.catalog.item p {
   text-transform: uppercase;
   font-size: 16px;
   color: @special_dark-grey-2;
   font-weight: none;
 }
 
-.catalog__item dl,
-.catalog-show {
-  font-family: "Oswald", "Arial", sans-serif;
+.catalog.item dl,
+.catalog.show {
   text-transform: none;
   font-size: 12px;
   color: @special_dark-grey;
 }
 
-.catalog-show.title {
+.catalog.show.title {
   text-transform: uppercase;
   color: @text-color-black-2;
 }
 
-.catalog-show.text {
+.catalog.show.text {
   font-family: "Arial", sans-serif;
   font-size: 12px;
   color: @special_dark-grey;
 }
 
-.button.button--show-all {
-  color: @special_dark-grey;
-  background-color: @basic_grey;
-}
-
-.additional-products {
-  font-family: "Oswald", "Arial", sans-serif;
+.catalog.additional-products {
   font-size: 24px;
+  font-weight: normal;
   text-transform: none;
   color: @text-color-black;
 }
 
-.additional-products p {
+.catalog.additional-products p {
   font-size: 16px;
   color: @special_dark-grey-2;
 }
 
-.additional-products dl {
+.catalog.additional-products dl,
+.catalog.additional-products dd {
   font-size: 14px;
   color: @special_dark-grey;
 }
 
-.present-block-promotion {
+.catalog.present-block.wrapper {
+  margin-top: 54px;
+  padding-top: 58px;
+}
+
+.catalog.present-block {
+  width: 280px;
+  height: 290px;
+  text-align: center;
+  background-color: #58a827;
+  background-image: url("../../img/cat-background-catalog.png");
+}
+
+.catalog.present-block-promotion {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   color: @basic_white;
-  color: red; // to delete
 }
