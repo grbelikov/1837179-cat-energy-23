@@ -2,7 +2,8 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи. Мобильная версия</title>
+    <title>МОЙ ПРОЕКТ HTML Academy: Кэт энерджи. Мобильная версия</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
@@ -39,10 +40,9 @@
     </header>
 
     <main class="main-page">
-      <h1 class="catalog">Каталог продукции</h1>
-
-      <section class="catalog__products">
-        <div class="catalog__product-chick-500">
+      <section class="catalog">
+        <h1 class="catalog headline">Каталог продукции</h1>
+        <div class="catalog item small-chick-500">
           <a name="energy_pro" href="product_description.html">
             <p>Cat Energy PRO 500 г</p>
             <img src="img/product_chick_500.png" width="68" height="86"
@@ -58,11 +58,11 @@
             <dd>700 Р.</dd>
           </dl>
             <a href="product_order.html">
-              <button type="button">Заказать</button>
+              <button class="button button--make-order" type="button">Заказать</button>
             </a>
         </div>
 
-        <div class="catalog__product-chick-1000">
+        <div class="catalog item big chick-1000">
           <a href="product_description.html">
           <p>Cat Energy PRO 1000 г</p>
             <img src="img/product_chick_1000.png" width="84" height="100.8"
@@ -78,11 +78,11 @@
               <dd>1000 Р.</dd>
           </dl>
           <a href="product_order.html">
-            <button type="button">Заказать</button>
+            <button class="button button--make-order" type="button">Заказать</button>
           </a>
         </div>
 
-        <div class="catalog__product-fish-500">
+        <div class="catalog item small fish-500">
           <a href="product_description.html">
             <p>Cat Energy PRO 500 г/p</p>
             <img src="img/product_fish_500.png" width="68" height="78"
@@ -98,11 +98,11 @@
               <dd>700 Р.</dd>
           </dl>
           <a href="product_order.html">
-            <button type="button">Заказать</button>
+            <button class="button button--make-order" type="button">Заказать</button>
           </a>
         </div>
 
-        <div class="catalog__product-fish-1000">
+        <div class="catalog item big fish-1000">
           <a href="product_description.html">
             <p>Cat Energy PRO 1000 г/p</p>
             <img src="img/product_fish_1000.png" width="84" height="100.8"
@@ -118,10 +118,10 @@
               <dd>1000 Р.</dd>
           </dl>
           <a href="product_order.html">
-            <button type="button">Заказать</button>
+            <button class="button button--make-order" type="button">Заказать</button>
           </a>
 
-        <div class="catalog__product-buckwheat-500">
+        <div class="catalog item small buckwheat-500">
           <a name="energy_slim" href="product_description.html">
             <p>Cat Energy SLIM 500 г/p</p>
             <img src="img/product_buckwheat_500.png" width="68" height="78"
@@ -137,11 +137,11 @@
               <dd>400 Р.</dd>
           </dl>
           <a href="product_order.html">
-            <button type="button">Заказать</button>
+            <button class="button button--make-order" type="button">Заказать</button>
           </a>
         </div>
 
-        <div class="catalog__product-buckwheat-1000">
+        <div class="catalog item big buckwheat-1000">
           <a href="product_description.html">
             <p>Cat Energy SLIM 1000 г/p</p>
             <img src="img/product_buckwheat_1000.png" width="84" height="100"
@@ -157,11 +157,11 @@
               <dd>700 Р.</dd>
           </dl>
           <a href="product_order.html">
-            <button type="button">Заказать</button>
+            <button class="button button--make-order" type="button">Заказать</button>
           </a>
         </div>
 
-        <div class="catalog__product-rice-500">
+        <div class="catalog item small rice-500">
           <a href="product_description.html">
             <p>Cat Energy SLIM 500 г/p</p>
             <img src="img/product_rice_500.png" width="72" height="84"
@@ -177,30 +177,32 @@
               <dd>500 Р.</dd>
           </dl>
           <a href="product_order.html">
-            <button type="button">Заказать</button>
+            <button class="button button--make-order" type="button">Заказать</button>
           </a>
         </div>
       </section>
 
-      <section class="catalog__show-all">
-        <div class="show-all__wrapper">
+      <section class="catalog show">
+        <div class="catalog show__wrapper">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="2"/>
+            <line x1="30" y1="15" y2="15" stroke="#D3D3D3" stroke-width="2"/>
+          </svg>
 
-          <p class="catalog__show-all title">
-            Показать еще<br>100500 товаров
+          <p class="catalog show title">
+            Показать еще 100500 товаров
           </p>
-          <p class="catalog__show-all text">
-            На самом деле вкусов<br>гораздо больше!
+          <p class="catalog show text">
+            На самом деле вкусов гораздо больше!
           </p>
-          <a class="button catalog__show-all" href="products_all.html">
-            <button type="button">Показать все</button>
-          </a>
+          <button class="button button--show-all" type="button">Показать все</button>
         </div>
       </section>
 
-      <section class="catalog__additional-products">
+      <section class="catalog additional-products">
         <h2>Дополнительные товары</h2>
 
-        <div class="catalog__additional-products sweetener">
+        <div class="catalog additional-products sweetener">
           <a href="product_description.html">
             <p>Сахарозаменитель</p>
           </a>
@@ -209,11 +211,11 @@
               <dd>200 Р.</dd>
           </dl>
           <a href="product_order.html">
-            <button type="button">Заказать</button>
+            <button class="button button--make-order" type="button">Заказать</button>
           </a>
         </div>
 
-        <div class="catalog__additional-products water">
+        <div class="catalog additional-products water">
           <a href="product_description.html">
             <p>Питьевая вода</p>
           </a>
@@ -222,11 +224,11 @@
               <dd>50 Р.</dd>
           </dl>
           <a href="product_order.html">
-            <button type="button">Заказать</button>
+            <button class="button button--make-order" type="button">Заказать</button>
           </a>
         </div>
 
-        <div class="catalog__additional-products milk">
+        <div class="catalog additional-products milk">
           <a href="product_description.html">
             <p>Молоко</p>
           </a>
@@ -235,11 +237,11 @@
               <dd>100 Р.</dd>
           </dl>
           <a href="product_order.html">
-            <button type="button">Заказать</button>
+            <button class="button button--make-order"type="button">Заказать</button>
           </a>
         </div>
 
-        <div class="catalog__additional-products vitamins">
+        <div class="catalog additional-products vitamins">
           <a href="product_description.html">
             <p>Витамины</p>
           </a>
@@ -248,31 +250,38 @@
               <dd>300 Р.</dd>
           </dl>
           <a href="product_order.html">
-            <button type="button">Заказать</button>
+            <button class="button button--make-order" type="button">Заказать</button>
           </a>
         </div>
       </section>
 
-      <section class="present__block">
-        <div class="present__block-wrapper">
-          <p>
-            Закажите все<br>и получите чехол для<br>кота в подарок!
+      <section class="catalog present-block">
+        <div class="catalog present-block wrapper">
+
+          <svg width="78" height="80" viewBox="0 0 78 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M64.0156 34.7127H14.031C12.2766 34.7127 10.8494 33.2951 10.8494 31.5524V22.0842C10.8494 20.3415 12.2766 18.9233 14.031 18.9233H64.0149C65.7687 18.9233 67.1953 20.3415 67.1953 22.0842V31.553C67.1959 33.2951 65.7693 34.7127 64.0156 34.7127ZM14.031 21.3455C13.6276 21.3455 13.2869 21.684 13.2869 22.0842V31.553C13.2869 31.9599 13.6208 32.2912 14.031 32.2912H64.0149C64.4244 32.2912 64.7578 31.9599 64.7578 31.553V22.0842C64.7578 21.6834 64.4171 21.3455 64.0149 21.3455H14.031Z" fill="white"/>
+            <path d="M57.0447 67.1488H20.999C17.6218 67.1488 14.8741 64.4191 14.8741 61.0626V33.5016C14.8741 32.8331 15.4201 32.2905 16.0929 32.2905C16.7656 32.2905 17.3116 32.8331 17.3116 33.5016V61.0626C17.3116 63.0833 18.9661 64.7267 20.999 64.7267H57.0447C59.077 64.7267 60.7308 63.0833 60.7308 61.0626V33.5016C60.7308 32.8331 61.2768 32.2905 61.9496 32.2905C62.6223 32.2905 63.1683 32.8331 63.1683 33.5016V61.0626C63.1683 64.4191 60.4213 67.1488 57.0447 67.1488Z" fill="white"/>
+            <path d="M39.0225 67.1488C38.3498 67.1488 37.8038 66.6069 37.8038 65.9378V33.5016C37.8038 32.8331 38.3498 32.2905 39.0225 32.2905C39.6953 32.2905 40.2413 32.8331 40.2413 33.5016V65.9372C40.2413 66.6069 39.6959 67.1488 39.0225 67.1488Z" fill="white"/>
+            <path d="M23.8113 21.3414C19.9966 19.2874 18.5731 14.5327 20.6383 10.7415C22.7022 6.95201 27.4864 5.53687 31.303 7.58721C37.117 10.7166 40.2565 19.4472 40.3869 19.8172L38.0877 20.6208C38.0585 20.5384 35.1256 12.3994 30.1433 9.71749C27.5078 8.30175 24.2062 9.27908 22.7821 11.8944C21.3567 14.5121 22.339 17.7941 24.9734 19.2117L23.8113 21.3414Z" fill="white"/>
+            <path d="M54.2313 21.3413L53.071 19.2111C54.3477 18.5238 55.2782 17.3848 55.6926 16.0035C56.1063 14.6217 55.9534 13.1624 55.2617 11.895C54.5719 10.6264 53.4263 9.70233 52.0363 9.29117C50.6457 8.88001 49.1783 9.0314 47.9023 9.71747C42.9201 12.3988 39.9871 20.5378 39.9579 20.6202L37.6587 19.8166C37.7891 19.4466 40.928 10.716 46.7421 7.58719C48.5897 6.5929 50.7182 6.3737 52.7316 6.96955C54.7468 7.56479 56.4061 8.90484 57.4061 10.7414C58.4073 12.5774 58.6285 14.6913 58.0289 16.6939C57.4287 18.6958 56.0801 20.3458 54.2313 21.3413Z" fill="white"/>
+            <path d="M61.9496 50.9314H16.0929C15.4201 50.9314 14.8741 50.3889 14.8741 49.7204C14.8741 49.0518 15.4201 48.5093 16.0929 48.5093H61.9496C62.6223 48.5093 63.1683 49.0518 63.1683 49.7204C63.1683 50.3889 62.6229 50.9314 61.9496 50.9314Z" fill="white"/>
+          </svg>
+
+          <p class="catalog present-block-promotion">
+            Закажите все и получите чехол для кота в подарок!
           </p>
         </div>
       </section>
 
       <section class="location">
-        <div class="location__wrapper">
-          <div class="location__cooperation contacts">
-            <p class="contacts__title">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
-            <p class="contacts__text">
-              ул. Большая<br>Конюшенная, д. 19/8<br>
+        <div class="location wrapper location-index">
+          <div class="location cooperation contacts">
+            <p class="location contacts title">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="location contacts__text">
+              ул. Большая Конюшенная, д. 19/8
               Санкт-Петербург
-            </p>
-            <div class="location-map">
-              <a class="location-map__picture-rectangle">
-                <img src="img/location.png" width="320" height="362" alt="местоположение на карте">
-              </a>
+            </address>
+            <div class="location map">
             </div>
           </div>
         </div>
@@ -281,14 +290,14 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-header__title-logo">
+        <a class="page-footer__title-logo">
           <img src="img/logo-mobile-title.svg" width="128" height="24" alt="cat energy title logo">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <img src="img/vk.svg" width="23" height="16" alt="cat energy title logo">
+                <img src="img/vk.svg" width="22" height="12" alt="cat energy title logo">
               </a>
             </li>
             <li class="social__item">
@@ -298,23 +307,23 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                <img src="img/facebook.svg" width="22" height="22" alt="cat energy title logo">
+                <img src="img/facebook.svg" width="10" height="18" alt="cat energy title logo">
               </a>
             </li>
           </ul>
         </div>
 
         <div class="copyright">
-          <a class="copyright__logo_name" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__logo-name" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
           </a>
-          <a class="copyright__logo_icon" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__logo-icon" href="https://htmlacademy.ru/intensive/adaptive">
             <svg
               width="27"
               height="34"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 60 60">
-              <path fill="#2E368F"
+              <path fill="#666666"
               d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17
               36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8
               7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7
