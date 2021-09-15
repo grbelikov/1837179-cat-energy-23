@@ -1,26 +1,43 @@
+<!--  Здравствуйте, уважаемый проверяющий!
+  Говорю как есть - я не успел доделать проект,
+  но очень хочу его доделать. Пушу на проверку то, что есть,
+  чтобы продлить время сдачи еще на 5 дней.
+  Спасибо за понимание.  -->
+
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>МОЙ ПРОЕКТ HTML Academy: Кэт энерджи. Мобильная версия</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
+  <body>
 
     <header class="page-header">
-      <a href="" class="page-header__logo">
-        <img src="img/logo-mobile.svg" width="33" height="37" alt="cat energy logo">
-      </a>
-      <a href="" class="page-header__title-logo">
-        <img src="img/logo-mobile-title.svg" width="101" height="18" alt="cat energy title logo">
-      </a>
+      <div class="page-header__wrapper container">
+        <a href="" class="page-header__logo">
+          <img src="img/logo-mobile.svg" width="33" height="37" alt="cat energy logo">
+        </a>
+        <a href="" class="page-header__title-logo">
+          <img src="img/logo-mobile-title.svg" width="101" height="18" alt="cat energy title logo">
+        </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">
-            Открыть меню
-          </span>
-        </button>
+
+        <!-- <picture>
+          <source class="page-header__logo srcset="/img/logo-mobile.svg"
+                  media="(min-width: 320px)">
+          <img src="img/logo-mobile.svg" alt="" />
+        </picture> -->
+
+
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="main-nav__burger-stick"></span>
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+          </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -41,6 +58,7 @@
           </ul>
         </div>
       </nav>
+    </div>
     </header>
 
     <main class="page-main">
@@ -282,5 +300,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

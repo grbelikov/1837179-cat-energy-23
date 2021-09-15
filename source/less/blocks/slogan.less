@@ -5,38 +5,69 @@
 }
 
 .slogan.slogan__wrapper {
-  width: 100%;
+  width: 320px;
   height: 302px;
+
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: @basic_green;
   background-image: url("../img/cat-background-index.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: @tablet-m) {
+    width: 414px;
+    height: auto;
+
+    background-image: none;
+    background-color: @basic_white;
+  }
 }
 
 .slogan.slogan__title {
-  top: 1420px;
   padding-top: 27px;
-  text-align: center;
   font-size: 36px;
-  line-height: 100%;
   color: @basic_white;
 }
 
 .slogan.slogan__intro {
   width: 100%;
   font-size: 14px;
-  line-height: 100%;
 
-  text-align: center;
   text-transform: uppercase;
   color: @basic_white;
 }
 
+.slogan.slogan__title,
+.slogan.slogan__intro {
+  text-align: center;
+  line-height: 100%;
+
+  @media (min-width: @tablet-m) {
+    margin-left: 117px;
+    text-align: left;
+    color: @text-color-black;
+  }
+}
+
 .slogan.background-image-basket {
-  width: 100%;
+  width: 280px;
   height: 270px;
   margin-top: 29px;
+  margin-left: auto;
+  margin-right: auto;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/basket.png");
+
+  @media (min-width: @tablet-m) {
+    color: @text-color-black;
+    width: 709px;
+    height: 609px;
+
+    background-size: 70%;
+    background-image: url("../img/basket-quality.png");
+  }
 }
